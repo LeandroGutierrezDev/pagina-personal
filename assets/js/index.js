@@ -48,8 +48,7 @@ window.addEventListener("load", () => {
 
     // Formulario
 
-    const data = new FormData(document.getElementById('formulario'));
-    console.log(data);
+    
 
 
 
