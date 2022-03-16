@@ -39,19 +39,16 @@ window.addEventListener("load", () => {
             item.addEventListener("click", (e) => {
                 let ite = e.target.parentNode.parentNode;
                 menuItem.forEach((elemento) => elemento.classList.remove("active"));
-                ite.classList.add("active");  
-               
+                ite.classList.add("active");
+
                 // console.log(result);
             });
         });
     });
 
-    // Formulario
 
-    
 
 
 
 
 });
-

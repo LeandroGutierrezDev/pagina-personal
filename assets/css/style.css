@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .divider {
     display: block;
     margin: -5px 0 16px 0;
@@ -39,7 +40,7 @@
 }
 
 .topbar-nav .toggle-menu:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .minibar {
@@ -53,6 +54,7 @@
     overflow-y: auto;
     z-index: 99;
 }
+
 .minibar-show {
     display: block;
 }
@@ -83,7 +85,7 @@
     background-color: transparent;
     color: #9FA2AB;
     -webkit-transition: all .3s ease;
-            transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .main-menu .menu-link .icon {
@@ -92,7 +94,7 @@
     line-height: 40px;
     color: inherit;
     -webkit-transition: line-height .3s ease, font-size .3s ease;
-            transition: line-height .3s ease, font-size .3s ease;
+    transition: line-height .3s ease, font-size .3s ease;
 }
 
 .main-menu .menu-link .caption {
@@ -102,7 +104,7 @@
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity .3s ease, visibility .3s ease;
-            transition: opacity .3s ease, visibility .3s ease;
+    transition: opacity .3s ease, visibility .3s ease;
 }
 
 .main-menu .menu-link:hover,
@@ -115,7 +117,6 @@
     .topbar-nav {
         display: none;
     }
-
     .minibar {
         display: block !important;
         top: 0;
@@ -124,45 +125,39 @@
         width: 80px;
         height: 100%;
     }
-
     .minibar .toggle-bar {
         display: none;
     }
-
     .minibar .main-menu {
         flex-direction: column;
         flex-wrap: wrap;
     }
-
     .main-menu .menu-item {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
     }
-
     .main-menu .menu-link {
         width: 100%;
         height: 70px;
         padding: 10px 0;
     }
-
     .main-menu .menu-link .icon {
         font-size: 28px;
         line-height: 55px;
     }
-
     .main-menu .menu-link .caption {
         font-size: 14px;
         opacity: 0;
         visibility: hidden;
     }
-
-    .main-menu .menu-link:hover .icon, .main-menu .active .menu-link .icon {
+    .main-menu .menu-link:hover .icon,
+    .main-menu .active .menu-link .icon {
         line-height: 28px;
         font-size: 21px;
     }
-    
-    .main-menu .menu-link:hover .caption, .main-menu .active .menu-link .caption {
+    .main-menu .menu-link:hover .caption,
+    .main-menu .active .menu-link .caption {
         opacity: 1;
         visibility: visible;
     }
@@ -181,7 +176,9 @@
     }
 }
 
+
 /* Filterable button */
+
 .filterable-button {
     position: relative;
     display: flex;
@@ -217,7 +214,9 @@
     box-shadow: 0 0 0 2px #fff, 0 0 0 4px #747474;
 }
 
+
 /* Testimonial */
+
 .testi-carousel {
     position: relative;
     width: 100%;
@@ -270,7 +269,9 @@
     color: #fff;
 }
 
+
 /* Timeline */
+
 .timeline {
     position: relative;
     display: block;
@@ -341,6 +342,7 @@
 
 
 /* Page Style */
+
 .vg-page {
     position: relative;
     padding: 70px 16px;
@@ -366,7 +368,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(255,255,255,0.7), #fff);
+    background: linear-gradient(rgba(255, 255, 255, 0.7), #fff);
     z-index: 2;
 }
 
@@ -394,7 +396,9 @@
     font-size: 18px;
 }
 
+
 /* About */
+
 .page-about .img-place {
     margin: 16px auto;
     width: 250px;
@@ -409,7 +413,9 @@
     }
 }
 
+
 /* Services */
+
 .page-service {
     background-color: #171925;
     color: #9FA2AB;
@@ -436,8 +442,12 @@
     box-shadow: none;
 }
 
+
 /* Blog */
+
+
 /* Blog list */
+
 .post-grid {
     justify-content: center;
 }
@@ -448,8 +458,8 @@
     border: 0;
     background-color: #fff;
     -webkit-transition: box-shadow .3s ease;
-       -moz-transition: box-shadow .3s ease;
-            transition: box-shadow .3s ease;
+    -moz-transition: box-shadow .3s ease;
+    transition: box-shadow .3s ease;
     box-shadow: 0 4px 30px rgba(140, 152, 164, 0.2);
 }
 
@@ -485,11 +495,11 @@
     color: #777;
 }
 
-
 .tag-lists {
     position: relative;
     display: block;
-    margin: 0;padding: 0;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -506,14 +516,15 @@
 
 .tag-lists li a {
     display: block;
-    margin: 5px;padding: 3px 10px;
+    margin: 5px;
+    padding: 3px 10px;
     font-size: 12px;
     background-color: #f1f3f5;
     color: #333;
     text-decoration: none;
     -webkit-transition: all .3s;
-       -moz-transition: all .3s;
-            transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
 }
 
 .tag-lists li a:hover {
@@ -521,20 +532,25 @@
     color: #fff;
 }
 
+
 /* Share */
+
 .sharer {
     position: relative;
     display: block;
-    margin: 0;padding: 0;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .sharer .sharer-link {
     display: inline-block;
     margin: 3px;
-    width: 35px;height: 35px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    text-align: center;text-decoration: none;
+    text-align: center;
+    text-decoration: none;
     line-height: 35px;
     font-size: 12px;
     background-color: #fff;
@@ -549,6 +565,7 @@
 
 
 /* Contact */
+
 .vg-contact-form {
     margin: 0 auto;
     padding: 30px 0;
@@ -561,6 +578,7 @@
 
 
 /* Footer */
+
 i {
     margin-right: 20px;
 }
@@ -610,8 +628,12 @@ i {
     z-index: 9;
 }
 
+
 /* Theme color style */
+
+
 /* Theme Red */
+
 .theme-red .topbar-nav .toggle-menu:hover {
     color: #EF3724;
 }
@@ -647,6 +669,7 @@ i {
 
 
 /* Theme Blue */
+
 .theme-blue .topbar-nav .toggle-menu:hover {
     color: #2960f7;
 }
@@ -687,6 +710,7 @@ i {
 
 
 /* Theme Green */
+
 .theme-green .topbar-nav .toggle-menu:hover {
     color: #8cc63f;
 }
@@ -727,6 +751,7 @@ i {
 
 
 /* Theme Orange */
+
 .theme-orange .topbar-nav .toggle-menu:hover {
     color: #fd7e14;
 }
@@ -767,6 +792,7 @@ i {
 
 
 /* Theme Purple */
+
 .theme-purple .topbar-nav .toggle-menu:hover {
     color: #6f42c1;
 }
@@ -807,8 +833,12 @@ i {
 
 ul .contenedor-icono i:hover {
     animation: icono 0.5s ease;
-    }
+}
 
+div.link-repo a {
+    width: 100%;
+    margin: 0 auto;
+}
 
 @keyframes icono {
     from {
@@ -819,9 +849,10 @@ ul .contenedor-icono i:hover {
     }
 }
 
-a{
+a {
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }

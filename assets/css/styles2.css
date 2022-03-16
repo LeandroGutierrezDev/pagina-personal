@@ -1,5 +1,4 @@
-
- /*[Master Stylesheet]
+/*[Master Stylesheet]
 
  Project:   VirtualGram Template
  Version:   1.0
@@ -34,7 +33,9 @@
     --theme-purple: #6f42c1;
 }
 
+
 /* Light */
+
 @font-face {
     font-family: 'Quicksand';
     font-style: normal;
@@ -43,7 +44,9 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+
 /* Normal */
+
 @font-face {
     font-family: 'Quicksand';
     font-style: normal;
@@ -52,7 +55,9 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+
 /* Medium */
+
 @font-face {
     font-family: 'Quicksand';
     font-style: normal;
@@ -60,6 +65,7 @@
     src: local('Quicksand Medium'), local('Quicksand-Medium'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_p2HcYT8L_.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 
 /* 
     1. Basic
@@ -98,38 +104,48 @@ body {
     font-size: 14px;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
     color: #2184f5;
 }
 
+
 /* Image Responsive */
+
 .img-place {
     position: relative;
     display: block;
     margin: 0 auto;
-    width: 100%;height: 100%;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     z-index: 10;
 }
 
-.img-place > img {
-    width: 100%;height: auto;
+.img-place>img {
+    width: 100%;
+    height: auto;
 }
 
+
 /* Overlay */
+
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;height: 100%;
-    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
     visibility: visible;
     z-index: 99;
 }
 
+
 /* 
     2. Button
 */
+
 .btn-theme {
     padding: 10px 30px;
     margin: 5px;
@@ -138,10 +154,11 @@ a:hover, a:active {
     color: #fff;
     font-weight: 500;
     border-radius: 6px;
-    box-shadow: 0 0 0 2px #fff, 0 3px 9px rgba(0,0,0,0.3);
+    box-shadow: 0 0 0 2px #fff, 0 3px 9px rgba(0, 0, 0, 0.3);
 }
 
-.btn-theme:hover, .btn-theme:active {
+.btn-theme:hover,
+.btn-theme:active {
     background-color: #808080;
     color: #fff;
 }
@@ -180,7 +197,9 @@ a:hover, a:active {
     border-radius: 40px !important;
 }
 
+
 /* Floating Action Button */
+
 .btn-fab {
     display: inline-block;
     padding: 0;
@@ -206,7 +225,9 @@ a:hover, a:active {
     line-height: 35px;
 }
 
+
 /* Social Button */
+
 .social {
     position: relative;
     display: block;
@@ -227,8 +248,8 @@ a:hover, a:active {
     color: #888;
     border: 1px solid #ddd;
     -webkit-transition: all .3s;
-       -moz-transition: all .3s;
-            transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
 }
 
 .social .social-link:hover {
@@ -237,7 +258,9 @@ a:hover, a:active {
     border-color: transparent;
 }
 
+
 /* Back to top */
+
 .btn-back_to_top {
     position: fixed;
     bottom: 10px;
@@ -256,7 +279,9 @@ a:hover, a:active {
     z-index: 99;
 }
 
+
 /* Template Config */
+
 .config {
     position: fixed;
     top: 50%;
@@ -383,7 +408,9 @@ a:hover, a:active {
     color: #fff !important;
 }
 
+
 /* Social Color */
+
 .bg-facebook,
 .bg-hover-facebook:hover {
     background-color: #3B5997 !important;
@@ -413,7 +440,6 @@ a:hover, a:active {
 .bg-hover-behance:hover {
     background-color: #005CFF !important;
 }
-
 
 .bg-dribbble,
 .bg-hover-dribbble:hover {
@@ -455,9 +481,11 @@ a:hover, a:active {
     background-color: #FE0002 !important;
 }
 
+
 /* 
     4. Progressbar
 */
+
 .progress-wrapper {
     display: block;
     margin: 10px 0;
@@ -485,13 +513,16 @@ a:hover, a:active {
     background-color: #747474;
 }
 
+
 /* 
     5. Preloader
 */
 
+
 /* 
     6. Pagination
 */
+
 .page-item:not(:last-child) .page-link {
     margin-right: 8px;
 }
@@ -520,6 +551,7 @@ a:hover, a:active {
 /* 
     7. List style
 */
+
 .theme-list {
     position: relative;
     padding-left: 30px;
@@ -557,9 +589,11 @@ a:hover, a:active {
     border: 2px solid #888;
 }
 
+
 /*
  *  8. Navigation 
  */
+
 .sticky {
     top: 0;
     z-index: 999;
@@ -580,6 +614,13 @@ a:hover, a:active {
         padding-left: 12px;
         padding-right: 12px;
     }
+}
+.link-repo {
+    text-align: center;
+    margin-top: 10px;
+}
+.link-repo a {
+    color: #323131;
 }
 
 @media (min-width: 768px) {
@@ -603,9 +644,11 @@ a:hover, a:active {
     }
 }
 
+
 /* 
  *  9. Input
  */
+
 .form-control {
     height: unset;
     padding-top: 10px;
@@ -621,7 +664,7 @@ a:hover, a:active {
 
 .form-control::-webkit-input-placeholder {
     font-weight: 500;
-    color: #9FA2AB; 
+    color: #9FA2AB;
 }
 
 .form-control::-moz-placeholder {
@@ -634,9 +677,11 @@ a:hover, a:active {
     color: #9FA2AB;
 }
 
+
 /* 
  *  10. Select
  */
+
 .vg-select {
     width: 100%;
     height: unset;
@@ -663,7 +708,9 @@ a:hover, a:active {
  *  8. Page Animation
  */
 
+
 /* Reveal */
+
 .reveal {
     position: fixed;
     top: 0;
@@ -686,66 +733,70 @@ a:hover, a:active {
 
 .reveal-layer-top {
     -webkit-animation-name: anim-effect-1;
-	animation-name: anim-effect-1;
+    animation-name: anim-effect-1;
 }
 
 .reveal-layer-bottom {
     -webkit-animation-name: anim-effect-2;
-	animation-name: anim-effect-2;
+    animation-name: anim-effect-2;
 }
 
 @-webkit-keyframes anim-effect-1 {
-	0% {
-		-webkit-transform: translate3d(0, 0, 0);
-	}
-	35%, 65% {
-		-webkit-transform: translate3d(0, -100%, 0);
-	}
-	100% {
-		-webkit-transform: translate3d(0, -200%, 0);
-	}
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    35%,
+    65% {
+        -webkit-transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, -200%, 0);
+    }
 }
 
 @keyframes anim-effect-1 {
-	0% {
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-	35%, 65% {
-		-webkit-transform: translate3d(0, -100%, 0);
-		transform: translate3d(0, -100%, 0);
-	}
-	100% {
-		-webkit-transform: translate3d(0, -200%, 0);
-		transform: translate3d(0, -200%, 0);
-	}
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    35%,
+    65% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, -200%, 0);
+        transform: translate3d(0, -200%, 0);
+    }
 }
 
 @-webkit-keyframes anim-effect-2 {
-	0% {
-		-webkit-transform: translate3d(0, 0, 0);
-	}
-	35%, 65% {
-		-webkit-transform: translate3d(0, -100%, 0);
-	}
-	100% {
-		-webkit-transform: translate3d(0, -200%, 0);
-	}
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    35%,
+    65% {
+        -webkit-transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, -200%, 0);
+    }
 }
 
 @keyframes anim-effect-2 {
-	0% {
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-	35%, 65% {
-		-webkit-transform: translate3d(0, -100%, 0);
-		transform: translate3d(0, 100%, 0);
-	}
-	100% {
-		-webkit-transform: translate3d(0, -200%, 0);
-		transform: translate3d(0, 200%, 0);
-	}
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    35%,
+    65% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, -200%, 0);
+        transform: translate3d(0, 200%, 0);
+    }
 }
 
 
@@ -753,7 +804,9 @@ a:hover, a:active {
     10. Plugins
 */
 
+
 /* Owl Carousel */
+
 .owl-header {
     position: relative;
     display: flex;
@@ -783,13 +836,15 @@ a:hover, a:active {
 .owl-nav .owl-prev,
 .owl-nav .owl-next {
     position: absolute;
-    top: 0;bottom: 0;
+    top: 0;
+    bottom: 0;
     margin: auto;
-    width: 30px;height: 30px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: #fff !important;
     outline: none !important;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
 }
@@ -816,7 +871,8 @@ a:hover, a:active {
 .owl-dots {
     position: relative;
     display: block;
-    width: 100%;height: 50px;
+    width: 100%;
+    height: 50px;
     line-height: 50px;
     text-align: center;
     background: #fff;
@@ -831,7 +887,8 @@ a:hover, a:active {
 
 .owl-dots .owl-dot span {
     display: block;
-    width: 10px;height: 10px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: #dadada;
 }
@@ -840,121 +897,123 @@ a:hover, a:active {
     background: #3c94f8;
 }
 
+
 /* OpenGraph Grid */
+
 .og-grid {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	list-style: none;
-	padding: 20px 0;
-	text-align: center;
-	width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
 }
 
 .og-grid li {
-	display: inline-block;
+    display: inline-block;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-	padding: 0 10px;
-	vertical-align: top;
+    padding: 0 10px;
+    vertical-align: top;
     width: 100%;
     max-width: 350px;
     height: 250px;
-	overflow: hidden;
+    overflow: hidden;
 }
 
-.og-grid li > a {
-	position: relative;
-	border: none;
+.og-grid li>a {
+    position: relative;
+    border: none;
     display: block;
     width: 100%;
-	height: 250px;
+    height: 250px;
 }
 
-.og-grid li > a img {
-	width: auto;
-	height: 100%;
+.og-grid li>a img {
+    width: auto;
+    height: 100%;
 }
 
-.og-grid li.og-expanded > a::after {
-	content: " ";
-	position: absolute;
-	top: auto;
-	left: 50%;
-	border: solid transparent;
-	height: 0;
-	width: 0;
-	pointer-events: none;
-	border-bottom-color: #f0f3f8;
-	border-width: 15px;
-	margin: -20px 0 0 -15px;
+.og-grid li.og-expanded>a::after {
+    content: " ";
+    position: absolute;
+    top: auto;
+    left: 50%;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    border-bottom-color: #f0f3f8;
+    border-width: 15px;
+    margin: -20px 0 0 -15px;
 }
 
 .og-content {
-	display: none;
+    display: none;
 }
 
 .og-expander {
-	position: absolute;
-	background: #f0f3f8;
-	top: auto;
-	left: 0;
-	width: 100%;
-	margin-top: 10px;
-	text-align: left;
-	height: 0;
-	overflow: hidden;
+    position: absolute;
+    background: #f0f3f8;
+    top: auto;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    height: 0;
+    overflow: hidden;
 }
 
 .og-expander-inner {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 50px 15px;
-	height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 15px;
+    height: 100%;
 }
 
 .og-close {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	top: 20px;
-	right: 20px;
-	cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
 }
 
 .og-close::before,
 .og-close::after {
-	content: '';
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	height: 1px;
-	background: #888;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	transform: rotate(45deg);
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    height: 1px;
+    background: #888;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .og-close::after {
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .og-close:hover::before,
 .og-close:hover::after {
-	background: #333;
+    background: #333;
 }
 
 .og-fullimg,
 .og-details {
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .og-fullimg {
@@ -964,7 +1023,7 @@ a:hover, a:active {
 }
 
 .og-fullimg img {
-	max-height: 100%;
+    max-height: 100%;
     max-width: 100%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -973,44 +1032,68 @@ a:hover, a:active {
 .og-details h2,
 .og-details h3,
 .og-details h4 {
-	font-weight: 400;
+    font-weight: 400;
 }
 
 .og-details p {
-	color: #999;
+    color: #999;
 }
 
 .og-loading {
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background: #ddd;
-	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: -25px 0 0 -25px;
-	-webkit-animation: loader 0.5s infinite ease-in-out both;
-	-moz-animation: loader 0.5s infinite ease-in-out both;
-	animation: loader 0.5s infinite ease-in-out both;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ddd;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    -webkit-animation: loader 0.5s infinite ease-in-out both;
+    -moz-animation: loader 0.5s infinite ease-in-out both;
+    animation: loader 0.5s infinite ease-in-out both;
 }
 
 @-webkit-keyframes loader {
-	0% { background: #ddd; }
-	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+    0% {
+        background: #ddd;
+    }
+    33% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+    }
+    66% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+    }
 }
 
 @-moz-keyframes loader {
-	0% { background: #ddd; }
-	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+    0% {
+        background: #ddd;
+    }
+    33% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+    }
+    66% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+    }
 }
 
 @keyframes loader {
-	0% { background: #ddd; }
-	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+    0% {
+        background: #ddd;
+    }
+    33% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+    }
+    66% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+    }
 }
 
 @media (min-width: 640px) {
@@ -1020,19 +1103,16 @@ a:hover, a:active {
 }
 
 @media (min-width: 768px) {
-	.og-expander-inner {
-		flex-direction: row;
-	}
-
-	.og-fullimg,
-	.og-details {
-		max-width: 50%;
+    .og-expander-inner {
+        flex-direction: row;
     }
-
+    .og-fullimg,
+    .og-details {
+        max-width: 50%;
+    }
     .og-fullimg {
         display: block;
     }
-
     .og-details {
         padding-left: 15px;
     }
@@ -1044,15 +1124,18 @@ a:hover, a:active {
     }
 }
 
+
 /* Isotope */
+
 .gridder {
     position: relative;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .grid-item {
-    display: block;
-    float: left;
+    display: flex;
+    flex-direction: column;
     margin: 16px 0;
     padding: 0 16px;
 }
@@ -1115,7 +1198,9 @@ a:hover, a:active {
 
 /* Theme color style */
 
+
 /* Theme red */
+
 .theme-red .bg-theme {
     background-color: #EF3724 !important;
 }
@@ -1178,6 +1263,7 @@ a:hover, a:active {
 
 
 /* Theme Blue */
+
 .theme-blue .bg-theme {
     background-color: #2960f7 !important;
 }
@@ -1240,6 +1326,7 @@ a:hover, a:active {
 
 
 /* Theme Green */
+
 .theme-green .bg-theme {
     background-color: #8cc63f !important;
 }
@@ -1302,6 +1389,7 @@ a:hover, a:active {
 
 
 /* Theme Orange */
+
 .theme-orange .bg-theme {
     background-color: #fd7e14 !important;
 }
@@ -1364,6 +1452,7 @@ a:hover, a:active {
 
 
 /* Theme Purple */
+
 .theme-purple .bg-theme {
     background-color: #6f42c1 !important;
 }
