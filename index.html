@@ -4,11 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="data:,">
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
   <title>Leandro Gutierrez — Full Stack Developer</title>
-  <!-- <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap"
-    rel="stylesheet" /> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
@@ -56,7 +53,7 @@
       </div>
     </div>
     <div class="hero-scroll">
-      <span>scroll</span>
+      <span></span>
       <div class="scroll-line"></div>
     </div>
   </section>
@@ -66,11 +63,16 @@
   <!-- ABOUT -->
   <section id="about">
     <div class="section-label">01 — Sobre mí</div>
-    <h2 class="section-title">Un poco de historia</h2>
+    <h2 class="section-title">En pocas palabras</h2>
     <div class="about-grid">
+
       <div class="about-bio">
-        <p>Soy un <strong>Full Stack Developer</strong> con foco en el ecosistema JavaScript. Me apasiona construir
-          productos digitales que resuelvan problemas reales, con código limpio y bien estructurado.</p>
+        <p>Actualmente trabajo como <strong>Analista IT</strong> en una multinacional, donde me desempeño en análisis,
+          soporte y mejora de sistemas. Esa experiencia me dio una visión real de cómo funcionan las aplicaciones en
+          producción y me entrenó para proponer soluciones eficientes ante problemas concretos.</p>
+        <p>Soy un <strong>Full Stack Developer</strong> con foco en el ecosistema JavaScript. Me formé en
+          <strong>Digital House</strong> y participé en aceleraciones de seniority con <strong>No Country</strong>,
+          donde trabajé en proyectos grupales con stack MERN completo.</p>
         <p>Disfruto tanto del <strong>backend</strong> — diseñando APIs y arquitecturas escalables con Node.js — como
           del <strong>frontend</strong>, donde me preocupo por la experiencia del usuario y los detalles visuales.</p>
         <p>Estoy siempre buscando nuevos desafíos que me permitan crecer. Si tenés un proyecto en mente, hablemos.</p>
@@ -87,7 +89,7 @@
           <span class="info-icon">💼</span>
           <div>
             <div class="info-label">Disponibilidad</div>
-            <div class="info-value">Abierto a propuestas</div>
+            <div class="info-value">Abierto a propuestas - Part time</div>
           </div>
         </div>
         <div class="info-item">
@@ -159,7 +161,7 @@
   <div class="divider"></div>
 
   <!-- EDUCATION -->
-  <section id="education">
+  <!-- <section id="education">
     <div class="section-label">03 — Formación</div>
     <h2 class="section-title">Educación</h2>
     <div class="timeline">
@@ -185,7 +187,7 @@
           finalizado con éxito en marzo de 2021.</p>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <div class="divider"></div>
 
@@ -196,7 +198,134 @@
     <div class="portfolio-grid">
 
       <div class="project-card">
-        <div class="project-img-placeholder">🎬</div>
+        <div class="project-img-placeholder">
+          <img class="project-img" src="./assets/img/respirapp.png" alt="Portada de Respirapp">
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">PWA</span>
+            <span class="tag teal">Android APK</span>
+          </div>
+          <div class="project-title">Respirapp</div>
+          <p class="project-desc">App de respiración guiada para bajar un cambio y volver al foco. Sin métricas, sin
+            datos, sin ruido. Desarrollada como PWA con Service Worker y Web Manifest, lo que permitió compilarla como
+            APK para Android.</p>
+          <div class="project-links">
+            <a href="https://leandrogutierrezdev.github.io/Respirapp/" target="_blank" class="project-link">↗ Ver
+              demo</a>
+            <a href="https://github.com/LeandroGutierrezDev/Respirapp" target="_blank" class="project-link">⌥
+              Repositorio</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-placeholder">
+          <img class="project-img" src="./assets/img/paginapersonal.png" alt="Portada de Pagina personal">
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag teal">JavaScript</span>
+          </div>
+          <div class="project-title">Pagina personal</div>
+          <p class="project-desc">Portfolio personal desarrollado desde cero. Diseño responsive, animaciones en CSS y JS
+            vanilla, menú hamburguesa para mobile y formulario de contacto integrado.</p>
+          <div class="project-links">
+            <a href="https://leandrogutierez.netlify.app/" target="_blank" class="project-link">↗ Ver
+              demo</a>
+            <a href="https://github.com/LeandroGutierrezDev/pagina-personal" target="_blank" class="project-link">⌥
+              Repositorio</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-placeholder">
+          <img class="project-img" src="./assets/img/darmando.png" alt="Portada de Don Armando">
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag teal">JavaScript</span>
+          </div>
+          <div class="project-title">Don Armando</div>
+          <p class="project-desc">Sitio web completo para una fiambrería de Lanús. Incluye secciones de servicios,
+            ubicación y contacto directo por WhatsApp e Instagram. Diseño responsive con menú hamburguesa.</p>
+          <div class="project-links">
+            <a href="https://darmando.netlify.app/" target="_blank" class="project-link">↗ Ver demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-placeholder">
+          <img class="project-img" src="./assets/img/condicionzero.png" alt="Portada de Condición Zero">
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag teal">Linktree alternativo</span>
+          </div>
+          <div class="project-title">Condición Zero</div>
+          <p class="project-desc">Landing page de links para perfil de Instagram de comunidad de preparación y
+            supervivencia. Centraliza YouTube, Instagram y canales de WhatsApp en una sola página.</p>
+          <div class="project-links">
+            <a href="https://condicionzero.netlify.app/" target="_blank" class="project-link">↗ Ver demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-placeholder">
+          <img class="project-img" src="./assets/img/fundalsfe.png" alt="Portada de Fundación Académica del Litoral">
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag teal">Diseño Gráfico</span>
+            <span class="tag">Corel Draw</span>
+            <span class="tag">Mockups</span>
+          </div>
+          <div class="project-title">Fundación Académica del Litoral</div>
+          <p class="project-desc">Diseño gráfico e identidad visual para institución sin fines de lucro. Desarrollo de
+            mockups y
+            materiales visuales con Corel Draw para su plataforma web.</p>
+          <div class="project-links">
+            <a href="https://fundalsfe.netlify.app/" target="_blank" class="project-link">↗ Ver demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-placeholder">
+          <img class="project-img" src="./assets/img/reserbar.png" alt="Portada de ReserBar">
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag teal">MongoDB</span>
+          </div>
+          <div class="project-title">ReserBar</div>
+          <p class="project-desc">App de reservas para bares desarrollada en MERN Stack con autenticación por token.
+            Proyecto grupal de aceleración con No Country. El servidor de producción fue dado de baja al finalizar el
+            programa.</p>
+          <div class="project-links">
+            <a href="https://reserbar.netlify.app/" target="_blank" class="project-link">↗ Ver demo</a>
+            <a href="https://github.com/LeandroGutierrezDev/ReserBar" target="_blank" class="project-link">⌥
+              Repositorio</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-placeholder">
+          <img class="project-img" src="./assets/img/NCinema.png" alt="Portada de No country cinema">
+        </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="tag">Node.js</span>
@@ -204,8 +333,9 @@
             <span class="tag teal">REST API</span>
           </div>
           <div class="project-title">No Country Cinema</div>
-          <p class="project-desc">Desarrollo backend y creación de APIs para una plataforma de cine. Arquitectura de
-            servidor con Node.js y Express, endpoints RESTful y gestión de datos.</p>
+          <p class="project-desc">Proyecto grupal de aceleración de seniority con No Country. Desarrollo del backend con
+            Node.js, Express y endpoints RESTful. El servidor de producción fue dado de baja al finalizar el programa.
+          </p>
           <div class="project-links">
             <a href="https://nccinema.netlify.app/" target="_blank" class="project-link">↗ Ver demo</a>
             <a href="https://github.com/LeandroGutierrezDev/NCinema" target="_blank" class="project-link">⌥
@@ -215,7 +345,9 @@
       </div>
 
       <div class="project-card">
-        <div class="project-img-placeholder">📅</div>
+        <div class="project-img-placeholder">
+          <img class="project-img" src="./assets/img/turnos.png" alt="Portada de Gestor de Turnos">
+        </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="tag">React</span>
@@ -235,7 +367,9 @@
       </div>
 
       <div class="project-card">
-        <div class="project-img-placeholder">💸</div>
+        <div class="project-img-placeholder">
+          <img class="project-img" src="./assets/img/gasto-semanal.png" alt="Portada de Control de Gastos">
+        </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="tag">React</span>
@@ -254,7 +388,9 @@
       </div>
 
       <div class="project-card">
-        <div class="project-img-placeholder">🛒</div>
+        <div class="project-img-placeholder">
+          <img class="project-img" src="./assets/img/maderitas.png" alt="Portada de Maderitas para pintar">
+        </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="tag">HTML5</span>
@@ -272,6 +408,8 @@
           </div>
         </div>
       </div>
+
+
 
     </div>
   </section>
