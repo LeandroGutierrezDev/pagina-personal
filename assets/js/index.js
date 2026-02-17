@@ -1,54 +1,80 @@
-window.addEventListener("load", () => {
-    console.log("hola");
+const navToggle = document.getElementById('navToggle');
+const navLinksToggle = document.getElementById('navLinks');
+const navOverlay = document.getElementById('navOverlay');
 
-    // Capturo los elementos
+function toggleMenu(force) {
+    const isOpen = force !== undefined ? force : !navLinksToggle.classList.contains('open');
+    navToggle.classList.toggle('open', isOpen);
+    navLinksToggle.classList.toggle('open', isOpen);
+    navOverlay.classList.toggle('open', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+}
 
-    const toTop = document.querySelector(".btn-back_to_top");
-    const btnBurger = document.querySelector(".toggle-menu");
-    const minibar = document.querySelector(".minibar");
-    const menuMain = document.querySelector("ul.main-menu");
-    const menuItem = document.querySelectorAll("li.menu-item");
+navToggle.addEventListener('click', () => toggleMenu());
+navOverlay.addEventListener('click', () => toggleMenu(false));
 
-    // Funciones
+// Cerrar al hacer click en cualquier link
+navLinksToggle.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => toggleMenu(false));
+});
 
-    // Boton subir
+// Smooth active nav highlight on scroll
+const sections = document.querySelectorAll('section[id], footer');
+const navLinks = document.querySelectorAll('.nav-links a');
 
-    window.addEventListener("scroll", () => {
-        if (document.documentElement.scrollTop > 500) {
-            toTop.style = "visibility: visible";
-        } else {
-            toTop.style = "visibility: hidden";
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navLinks.forEach(link => {
+                link.style.color = '';
+                if (link.getAttribute('href') === '#' + entry.target.id) {
+                    link.style.color = 'var(--text)';
+                }
+            });
         }
     });
+}, { threshold: 0.4 });
 
-    toTop.addEventListener("click", () => {
-        document.documentElement.scrollTop = 0;
+document.querySelectorAll('section[id]').forEach(sec => observer.observe(sec));
+
+// Entrance animations on scroll
+const animItems = document.querySelectorAll('.project-card, .skill-card, .edu-item, .info-item, .social-link');
+const animObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }, 80);
+            animObserver.unobserve(entry.target);
+        }
     });
+}, { threshold: 0.1 });
 
-    // Menu hamburguesa
+animItems.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity .5s ease, transform .5s ease, border-color .3s, box-shadow .3s';
+    animObserver.observe(el);
+});
 
-    btnBurger.addEventListener("click", () => {
-        minibar.classList.toggle("minibar-show");
-    });
+// Form handler
+document.querySelector('#contactForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value || 'Contacto desde portfolio';
+    const msg = document.getElementById('msg').value;
+    const mailto = `mailto:leandrogutierrezdev@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\n${msg}`)}`;
+    window.location.href = mailto;
+});
 
-    menuItem.forEach((item) => {
-        item.addEventListener("click", (e) => {
-            minibar.classList.toggle("minibar-show");
-        });
-        menuItem.forEach((item) => {
-            item.addEventListener("click", (e) => {
-                let ite = e.target.parentNode.parentNode;
-                menuItem.forEach((elemento) => elemento.classList.remove("active"));
-                ite.classList.add("active");
-
-                // console.log(result);
-            });
-        });
-    });
-
-
-
-
-
-
+// Nav shadow on scroll
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 20) {
+        nav.style.boxShadow = '0 4px 30px rgba(0,0,0,0.4)';
+    } else {
+        nav.style.boxShadow = 'none';
+    }
 });
