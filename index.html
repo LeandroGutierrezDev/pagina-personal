@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:,">
+  <title>Leandro Gutierrez — Full Stack Developer</title>
+  <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#home">LG<span>.</span>dev</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- HERO -->
+  <section id="home" style="padding-top:8rem; max-width:100%;">
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-inner">
+      <div class="hero-tag">Full Stack Developer</div>
+      <h1 class="hero-name">
+        Leandro<br>
+        <span class="line2">Gutierrez</span>
+      </h1>
+      <p class="hero-sub">
+        Construyo soluciones digitales que funcionan.<br>
+        Backend sólido · Frontends que se sienten bien.
+        <span class="highlight"> Basado en Buenos Aires, AR.</span>
+      </p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">→ Ver proyectos</a>
+        <a href="./assets/CV_Leandro_Gutierrez.pdf" class="btn btn-secondary" download>↓ Descargar CV</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">01 — Sobre mí</div>
+    <h2 class="section-title">Un poco de historia</h2>
+    <div class="about-grid">
+      <div class="about-bio">
+        <p>Soy un <strong>Full Stack Developer</strong> con foco en el ecosistema JavaScript. Me apasiona construir
+          productos digitales que resuelvan problemas reales, con código limpio y bien estructurado.</p>
+        <p>Disfruto tanto del <strong>backend</strong> — diseñando APIs y arquitecturas escalables con Node.js — como
+          del <strong>frontend</strong>, donde me preocupo por la experiencia del usuario y los detalles visuales.</p>
+        <p>Estoy siempre buscando nuevos desafíos que me permitan crecer. Si tenés un proyecto en mente, hablemos.</p>
+      </div>
+      <div class="about-info">
+        <div class="info-item">
+          <span class="info-icon">🌍</span>
+          <div>
+            <div class="info-label">Ubicación</div>
+            <div class="info-value">Lanús, Buenos Aires — Argentina</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">💼</span>
+          <div>
+            <div class="info-label">Disponibilidad</div>
+            <div class="info-value">Abierto a propuestas</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">🎯</span>
+          <div>
+            <div class="info-label">Foco</div>
+            <div class="info-value">Full Stack · APIs · React</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📧</span>
+          <div>
+            <div class="info-label">Email</div>
+            <div class="info-value">leandrogutierrezdev@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills" style="max-width:100%; padding: 5rem 4rem;">
+    <div class="inner">
+      <div class="section-label">02 — Tecnologías</div>
+      <h2 class="section-title">Stack & herramientas</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-icon">⚡</span>
+          <span class="skill-name">JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">⚛️</span>
+          <span class="skill-name">React</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🟢</span>
+          <span class="skill-name">Node.js</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🛤️</span>
+          <span class="skill-name">Express</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🗄️</span>
+          <span class="skill-name">SQL / MySQL</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🎨</span>
+          <span class="skill-name">CSS3</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🏗️</span>
+          <span class="skill-name">HTML5</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🐙</span>
+          <span class="skill-name">Git</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🔄</span>
+          <span class="skill-name">Scrum</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-label">03 — Formación</div>
+    <h2 class="section-title">Educación</h2>
+    <div class="timeline">
+      <div class="edu-item">
+        <div class="edu-year">2022</div>
+        <div class="edu-degree">Programador Web Full Stack Node</div>
+        <div class="edu-school">Digital House</div>
+        <p class="edu-desc">Curso de 7 meses donde profundicé en el desarrollo web con Node.js, bases de datos
+          relacionales y no relacionales, servidores, control de versiones y metodologías ágiles.</p>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2021</div>
+        <div class="edu-degree">Introducción al Desarrollo Web II</div>
+        <div class="edu-school">Google Activate</div>
+        <p class="edu-desc">Segunda parte del curso de introducción al desarrollo web de Google. 40 hs de duración,
+          finalizado con éxito en mayo de 2021.</p>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2021</div>
+        <div class="edu-degree">Introducción al Desarrollo Web I</div>
+        <div class="edu-school">Google Activate</div>
+        <p class="edu-desc">Primera parte del curso de introducción al desarrollo web de Google. 40 hs de duración,
+          finalizado con éxito en marzo de 2021.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="section-label">04 — Trabajos</div>
+    <h2 class="section-title">Proyectos destacados</h2>
+    <div class="portfolio-grid">
+
+      <div class="project-card">
+        <div class="project-img-placeholder">🎬</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag teal">REST API</span>
+          </div>
+          <div class="project-title">No Country Cinema</div>
+          <p class="project-desc">Desarrollo backend y creación de APIs para una plataforma de cine. Arquitectura de
+            servidor con Node.js y Express, endpoints RESTful y gestión de datos.</p>
+          <div class="project-links">
+            <a href="https://nccinema.netlify.app/" target="_blank" class="project-link">↗ Ver demo</a>
+            <a href="https://github.com/LeandroGutierrezDev/NCinema" target="_blank" class="project-link">⌥
+              Repositorio</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-placeholder">📅</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag teal">Hooks</span>
+            <span class="tag">CSS3</span>
+          </div>
+          <div class="project-title">Gestor de Turnos</div>
+          <p class="project-desc">Administrador de pacientes para veterinaria desarrollado en React. Gestión de turnos
+            con estado global, formularios controlados y persistencia de datos.</p>
+          <div class="project-links">
+            <a href="https://administrador-pacientes-veterinaria-lgdev.netlify.app/" target="_blank"
+              class="project-link">↗ Ver demo</a>
+            <a href="https://github.com/LeandroGutierrezDev/gestor-turnos-vet" target="_blank" class="project-link">⌥
+              Repositorio</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-placeholder">💸</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag teal">useState</span>
+            <span class="tag">CSS3</span>
+          </div>
+          <div class="project-title">Control de Gastos</div>
+          <p class="project-desc">App de control semanal de gastos construida en React. Visualización por categoría,
+            seguimiento de presupuesto y gráficos de distribución.</p>
+          <div class="project-links">
+            <a href="https://gastos-semanal-lgdev.netlify.app/" target="_blank" class="project-link">↗ Ver demo</a>
+            <a href="https://github.com/LeandroGutierrezDev/controlsemanal" target="_blank" class="project-link">⌥
+              Repositorio</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-placeholder">🛒</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag teal">JavaScript</span>
+          </div>
+          <div class="project-title">Maderitas para pintar</div>
+          <p class="project-desc">Página web para emprendimiento de venta de maderitas para manualidades. Catálogo de
+            productos, información de contacto y diseño responsive.</p>
+          <div class="project-links">
+            <a href="https://maderitas-para-pintar-lgdev.netlify.app/" target="_blank" class="project-link">↗ Ver
+              demo</a>
+            <a href="https://github.com/LeandroGutierrezDev/maderitas-para-pintar" target="_blank"
+              class="project-link">⌥ Repositorio</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact" style="max-width:100%; padding: 5rem 4rem;">
+    <div class="inner">
+      <div class="section-label">05 — Contacto</div>
+      <h2 class="section-title">Hablemos</h2>
+      <div class="contact-grid">
+        <div>
+          <p class="contact-copy">¿Tenés un proyecto en mente, o simplemente querés charlar sobre tecnología? Escribime,
+            siempre estoy abierto a nuevas oportunidades y colaboraciones.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/leandro-gutierrez-dev/" target="_blank" class="social-link">
+              <span class="sl-icon">🔗</span> LinkedIn — leandro-gutierrez-dev
+            </a>
+            <a href="https://github.com/LeandroGutierrezDev" target="_blank" class="social-link">
+              <span class="sl-icon">🐙</span> GitHub — LeandroGutierrezDev
+            </a>
+            <a href="mailto:leandrogutierrezdev@gmail.com" class="social-link">
+              <span class="sl-icon">✉️</span> leandrogutierrezdev@gmail.com
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5491166912294" target="_blank" class="social-link">
+              <span class="sl-icon">💬</span> WhatsApp — +54 11 6691 2294
+            </a>
+          </div>
+        </div>
+        <div>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" placeholder="Tu nombre" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="tu@email.com" autocomplete="email" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="subject">Asunto</label>
+              <input type="text" id="subject" placeholder="¿De qué se trata?" autocomplete="off" />
+            </div>
+            <div class="field">
+              <label for="msg">Mensaje</label>
+              <textarea id="msg" placeholder="Contame tu idea..." autocomplete="off" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Enviar mensaje →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-copy">
+      © 2024 <span>Leandro Gutierrez</span> — Hecho con ♥ desde Lanús, Buenos Aires
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/LeandroGutierrezDev" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/leandro-gutierrez-dev/" target="_blank">LinkedIn</a>
+      <a href="mailto:leandrogutierrezdev@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
