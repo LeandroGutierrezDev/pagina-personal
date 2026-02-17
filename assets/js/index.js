@@ -59,15 +59,15 @@ animItems.forEach(el => {
 });
 
 // Form handler
-document.querySelector('#contactForm').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value || 'Contacto desde portfolio';
-    const msg = document.getElementById('msg').value;
-    const mailto = `mailto:leandrogutierrezdev@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\n${msg}`)}`;
-    window.location.href = mailto;
-});
+// document.querySelector('#contactForm').addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     const name = document.getElementById('name').value;
+//     const email = document.getElementById('email').value;
+//     const subject = document.getElementById('subject').value || 'Contacto desde portfolio';
+//     const msg = document.getElementById('msg').value;
+//     const mailto = `mailto:leandrogutierrezdev@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\n${msg}`)}`;
+//     window.location.href = mailto;
+// });
 
 // Nav shadow on scroll
 window.addEventListener('scroll', () => {
