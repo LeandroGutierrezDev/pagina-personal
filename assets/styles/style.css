@@ -462,7 +462,7 @@
     }
 
     .about-info {
-        margin-left: 1rem;
+        margin: 1rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -991,5 +991,86 @@
 
         .portfolio-grid {
             grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 420px) {
+
+        /* Ajustes generales */
+        section {
+            padding: 3rem 1rem;
+        }
+
+        #home {
+            padding: 6rem 1rem 3rem;
+        }
+
+        #contact {
+            padding: 3rem 1rem !important;
+        }
+
+        /* Nav más compacto */
+        nav {
+            padding: 1rem;
+        }
+
+        .nav-logo img {
+            width: 32px;
+            height: 32px;
+        }
+
+        /* Hero más compacto */
+        .hero-name {
+            font-size: 2.5rem;
+        }
+
+        .hero-sub {
+            font-size: 0.95rem;
+        }
+
+        .hero-actions {
+            gap: 0.75rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.75rem;
+        }
+
+        /* Contact grid con menos gap */
+        .contact-grid {
+            gap: 2rem;
+        }
+
+        /* Social links más compactos */
+        .social-link {
+            font-size: 0.7rem;
+            padding: 0.7rem 0.9rem;
+            gap: 0.75rem;
+            word-break: break-word;
+        }
+
+        .social-link .sl-icon {
+            font-size: 0.9rem;
+        }
+
+        /* Form más compacto */
+        input,
+        textarea {
+            padding: 0.7rem 0.9rem;
+            font-size: 0.85rem;
+        }
+
+        label {
+            font-size: 0.65rem;
+        }
+
+        /* Section titles más chicos */
+        .section-title {
+            font-size: 1.8rem;
+        }
+
+        .section-label {
+            font-size: 0.65rem;
         }
     }
