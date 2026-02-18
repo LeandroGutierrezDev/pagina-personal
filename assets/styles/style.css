@@ -438,12 +438,7 @@
     /* ----------- */
 
     #about .about-grid {
-        /* display: grid;
-        grid-template-columns: 1.2fr 1fr;
-        gap: 5rem;
-        align-items: center; */
         display: flex;
-
     }
 
     .about-bio {
@@ -462,7 +457,7 @@
     }
 
     .about-info {
-        margin: 1rem;
+        margin: 1rem 0;
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -472,7 +467,7 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-        padding: 1rem 1.25rem;
+        padding: 1rem 0.5rem;
         background: var(--card);
         border: 1px solid var(--border);
         border-radius: 6px;
@@ -763,8 +758,8 @@
     .contact-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: start;
+        gap: 2rem;
+        align-items: end;
     }
 
     .contact-copy {
@@ -777,7 +772,7 @@
     .social-links {
         display: flex;
         flex-direction: column;
-        gap: 0.75rem;
+        gap: 1rem;
     }
 
     .social-link {
@@ -807,6 +802,7 @@
 
     /* ── FORM ── */
     form {
+        margin-top: 1rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -974,6 +970,12 @@
             flex-direction: column;
         }
 
+        .portfolio-grid {
+            grid-template-columns: repeat(2, 1fr);
+            /* En vez de 1fr */
+            gap: 1.25rem;
+        }
+
         .contact-grid {
             grid-template-columns: 1fr;
             gap: 2.5rem;
@@ -991,6 +993,7 @@
 
         .portfolio-grid {
             grid-template-columns: 1fr;
+
         }
     }
 
@@ -998,7 +1001,7 @@
 
         /* Ajustes generales */
         section {
-            padding: 3rem 1rem;
+            padding: 3rem 2rem;
         }
 
         #home {
@@ -1006,7 +1009,7 @@
         }
 
         #contact {
-            padding: 3rem 1rem !important;
+            padding: 3rem 2rem;
         }
 
         /* Nav más compacto */
@@ -1037,10 +1040,7 @@
             font-size: 0.75rem;
         }
 
-        /* Contact grid con menos gap */
-        .contact-grid {
-            gap: 2rem;
-        }
+
 
         /* Social links más compactos */
         .social-link {
@@ -1072,5 +1072,36 @@
 
         .section-label {
             font-size: 0.65rem;
+        }
+
+        /* Skills en 3 columnas */
+        .skills-grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+        }
+
+        .skill-card {
+            padding: 1rem 0.5rem;
+            min-height: auto;
+        }
+
+        .skill-icon {
+            font-size: 1.8rem;
+        }
+
+        .skill-name {
+            font-size: 0.6rem;
+        }
+
+        .skill-card {
+            padding: 1rem 0.5rem;
+            min-height: auto;
+            text-align: center;
+        }
+
+        .skill-name {
+            font-size: 0.6rem;
+            line-height: 1.2;
+            word-break: break-word;
         }
     }
