@@ -49,33 +49,34 @@
             <span></span>
             <span></span>
         </button>
+        <!-- El switcher ES | PT se inyecta aquí por i18n.js -->
+        <div class="nav-overlay" id="navOverlay"></div>
         <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#home" data-i18n="nav_inicio">Inicio</a></li>
+            <li><a href="#about" data-i18n="nav_about">Sobre mí</a></li>
+            <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
         </ul>
     </nav>
-    <div class="nav-overlay" id="navOverlay"></div>
 
     <!-- HERO -->
     <section id="home" style="padding-top:8rem; max-width:100%;">
         <div class="hero-glow glow-1"></div>
         <div class="hero-glow glow-2"></div>
         <div class="hero-inner">
-            <div class="hero-tag">Full Stack Developer</div>
+            <div class="hero-tag" data-i18n="hero_tag">Full Stack Developer</div>
             <h1 class="hero-name">
                 Leandro<br>
                 <span class="line2">Gutierrez</span>
             </h1>
             <p class="hero-sub">
-                Construyo soluciones digitales que funcionan.<br>
-                Backend sólido · Frontends que se sienten bien.
-                <span class="highlight"> Basado en Buenos Aires, AR.</span>
+                <span data-i18n="hero_sub">Construyo soluciones digitales que funcionan.</span><br>
+                <span data-i18n="hero_sub2">Backend sólido · Frontends que se sienten bien.</span>
+                <span class="highlight" data-i18n="hero_location"> Basado en Buenos Aires, AR.</span>
             </p>
             <div class="hero-actions">
-                <a href="#portfolio" class="btn btn-primary">→ Ver proyectos</a>
+                <a href="#portfolio" class="btn btn-primary" data-i18n="hero_cta">→ Ver proyectos</a>
             </div>
         </div>
         <div class="hero-scroll">
@@ -88,40 +89,48 @@
 
     <!-- ABOUT -->
     <section id="about">
-        <div class="section-label">01 — Sobre mí</div>
-        <h2 class="section-title">En pocas palabras</h2>
+        <div class="section-label" data-i18n="about_label">01 — Sobre mí</div>
+        <h2 class="section-title" data-i18n="about_title">En pocas palabras</h2>
         <div class="about-grid">
             <div class="about-bio">
-                <p>Actualmente me desempeño como <strong>Analista IT</strong> en una compañía corporativa, donde
+                <p data-i18n-html="about_p1">Actualmente me desempeño como <strong>Analista IT</strong> en una compañía
+                    corporativa, donde
                     participo en el análisis, soporte y mejora continua de sistemas en producción. Esta experiencia me
                     dio una comprensión profunda del funcionamiento real de las aplicaciones y fortaleció mi capacidad
                     para diagnosticar problemas y proponer soluciones eficientes y sostenibles.</p>
-                <p>En paralelo, mi alter ego es <strong>Full Stack Developer</strong> enfocado en el ecosistema JavaScript, donde trabajo en proyectos freelance y personales. Me formé en <strong>Digital House</strong> y continué desarrollando mi experiencia a través de proyectos colaborativos en un entorno orientado al crecimiento de seniority, trabajando con el stack MERN y metodologías similares a las utilizadas en equipos profesionales.</p>
-                <p>Disfruto tanto del <strong>backend</strong> —diseñando APIs y arquitecturas escalables con Node.js—
+                <p data-i18n-html="about_p2">En paralelo, mi alter ego es <strong>Full Stack Developer</strong> enfocado
+                    en el ecosistema JavaScript, donde trabajo en proyectos freelance y personales. Me formé en
+                    <strong>Digital House</strong> y continué desarrollando mi experiencia a través de proyectos
+                    colaborativos en un entorno orientado al crecimiento de seniority, trabajando con el stack MERN y
+                    metodologías similares a las utilizadas en equipos profesionales.
+                </p>
+                <p data-i18n-html="about_p3">Disfruto tanto del <strong>backend</strong> —diseñando APIs y arquitecturas
+                    escalables con Node.js—
                     como del <strong>frontend</strong>, donde busco crear experiencias cuidadas y usables. Me interesa
                     especialmente construir soluciones claras, prácticas y mantenibles.</p>
-                <p>Siempre estoy buscando desafíos que me permitan seguir creciendo como desarrollador. Si tenés un
+                <p data-i18n-html="about_p4">Siempre estoy buscando desafíos que me permitan seguir creciendo como
+                    desarrollador. Si tenés un
                     proyecto en mente o querés colaborar, estoy abierto a conversar.</p>
             </div>
             <div class="about-info">
                 <div class="info-item">
                     <span class="info-icon">🌍</span>
                     <div>
-                        <div class="info-label">Ubicación</div>
-                        <div class="info-value">Lanús, Buenos Aires — Argentina</div>
+                        <div class="info-label" data-i18n="about_location_label">Ubicación</div>
+                        <div class="info-value" data-i18n="about_location_value">Lanús, Buenos Aires — Argentina</div>
                     </div>
                 </div>
                 <div class="info-item">
                     <span class="info-icon">💼</span>
                     <div>
-                        <div class="info-label">Disponibilidad</div>
-                        <div class="info-value">Abierto a propuestas - Part time</div>
+                        <div class="info-label" data-i18n="about_avail_label">Disponibilidad</div>
+                        <div class="info-value" data-i18n="about_avail_value">Abierto a propuestas - Part time</div>
                     </div>
                 </div>
                 <div class="info-item">
                     <span class="info-icon">🎯</span>
                     <div>
-                        <div class="info-label">Foco</div>
+                        <div class="info-label" data-i18n="about_focus_label">Foco</div>
                         <div class="info-value">Full Stack NodeJS</div>
                     </div>
                 </div>
@@ -136,7 +145,7 @@
         </div>
 
         <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">→ Contacto</a>
+            <a href="#contact" class="btn btn-primary" data-i18n="about_cta">→ Contacto</a>
         </div>
     </section>
 
@@ -145,8 +154,8 @@
     <!-- SKILLS -->
     <section id="skills" style="max-width:100%; padding: 3rem 2rem;">
         <div class="inner">
-            <div class="section-label">02 — Tecnologías</div>
-            <h2 class="section-title">Stack & herramientas</h2>
+            <div class="section-label" data-i18n="skills_label">02 — Tecnologías</div>
+            <h2 class="section-title" data-i18n="skills_title">Stack & herramientas</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <i class="devicon-html5-plain skill-icon"></i>
@@ -156,12 +165,10 @@
                     <i class="devicon-css3-plain skill-icon"></i>
                     <span class="skill-name">CSS3</span>
                 </div>
-
                 <div class="skill-card">
                     <i class="devicon-javascript-plain skill-icon"></i>
                     <span class="skill-name">JavaScript</span>
                 </div>
-
                 <div class="skill-card">
                     <i class="devicon-nodejs-plain-wordmark skill-icon"></i>
                     <span class="skill-name">Node.js</span>
@@ -202,8 +209,8 @@
 
     <!-- PORTFOLIO -->
     <section id="portfolio">
-        <div class="section-label">03 — Trabajos</div>
-        <h2 class="section-title">Proyectos destacados</h2>
+        <div class="section-label" data-i18n="portfolio_label">03 — Trabajos</div>
+        <h2 class="section-title" data-i18n="portfolio_title">Proyectos destacados</h2>
         <div class="portfolio-grid">
 
             <div class="project-card">
@@ -217,18 +224,14 @@
                         <span class="tag teal">Android APK</span>
                     </div>
                     <div class="project-title">Respirapp</div>
-                    <p class="project-desc">App de respiración guiada para bajar un cambio y volver al foco. Sin
-                        métricas, sin
-                        datos, sin ruido. Desarrollada como PWA con Service Worker y Web Manifest, lo que permitió
-                        compilarla como
-                        APK para Android.</p>
+                    <p class="project-desc" data-i18n="desc_respirapp">App de respiración guiada para bajar un cambio y
+                        volver al foco. Sin métricas, sin datos, sin ruido. Desarrollada como PWA con Service Worker y
+                        Web Manifest, lo que permitió compilarla como APK para Android.</p>
                     <div class="project-links">
-                        <a href="https://leandrogutierrezdev.github.io/Respirapp/" target="_blank"
-                            class="project-link">↗ Ver
-                            demo</a>
-                        <a href="https://github.com/LeandroGutierrezDev/Respirapp" target="_blank"
-                            class="project-link">⌥
-                            Repositorio</a>
+                        <a href="https://leandrogutierrezdev.github.io/Respirapp/" target="_blank" class="project-link"
+                            data-i18n="proj_ver_demo">↗ Ver demo</a>
+                        <a href="https://github.com/LeandroGutierrezDev/Respirapp" target="_blank" class="project-link"
+                            data-i18n="proj_repo">⌥ Repositorio</a>
                     </div>
                 </div>
             </div>
@@ -244,15 +247,14 @@
                         <span class="tag teal">JavaScript</span>
                     </div>
                     <div class="project-title">Pagina personal</div>
-                    <p class="project-desc">Portfolio personal desarrollado desde cero. Diseño responsive, animaciones
-                        en CSS y JS
-                        vanilla, menú hamburguesa para mobile y formulario de contacto integrado.</p>
+                    <p class="project-desc" data-i18n="desc_pagina">Portfolio personal desarrollado desde cero. Diseño
+                        responsive, animaciones en CSS y JS vanilla, menú hamburguesa para mobile y formulario de
+                        contacto integrado.</p>
                     <div class="project-links">
-                        <a href="https://leandrogutierez.netlify.app/" target="_blank" class="project-link">↗ Ver
-                            demo</a>
+                        <a href="https://leandrogutierez.netlify.app/" target="_blank" class="project-link"
+                            data-i18n="proj_ver_demo">↗ Ver demo</a>
                         <a href="https://github.com/LeandroGutierrezDev/pagina-personal" target="_blank"
-                            class="project-link">⌥
-                            Repositorio</a>
+                            class="project-link" data-i18n="proj_repo">⌥ Repositorio</a>
                     </div>
                 </div>
             </div>
@@ -268,12 +270,12 @@
                         <span class="tag teal">JavaScript</span>
                     </div>
                     <div class="project-title">Don Armando</div>
-                    <p class="project-desc">Sitio web completo para una fiambrería de Lanús. Incluye secciones de
-                        servicios,
-                        ubicación y contacto directo por WhatsApp e Instagram. Diseño responsive con menú hamburguesa.
-                    </p>
+                    <p class="project-desc" data-i18n="desc_darmando">Sitio web completo para una fiambrería de Lanús.
+                        Incluye secciones de servicios, ubicación y contacto directo por WhatsApp e Instagram. Diseño
+                        responsive con menú hamburguesa.</p>
                     <div class="project-links">
-                        <a href="https://darmando.netlify.app/" target="_blank" class="project-link">↗ Ver demo</a>
+                        <a href="https://darmando.netlify.app/" target="_blank" class="project-link"
+                            data-i18n="proj_ver_demo">↗ Ver demo</a>
                     </div>
                 </div>
             </div>
@@ -289,10 +291,12 @@
                         <span class="tag teal">Linktree alternativo</span>
                     </div>
                     <div class="project-title">Condición Zero</div>
-                    <p class="project-desc">Landing page de links para perfil de Instagram de comunidad de preparación y
-                        supervivencia. Centraliza YouTube, Instagram y canales de WhatsApp en una sola página.</p>
+                    <p class="project-desc" data-i18n="desc_condicion">Landing page de links para perfil de Instagram de
+                        comunidad de preparación y supervivencia. Centraliza YouTube, Instagram y canales de WhatsApp en
+                        una sola página.</p>
                     <div class="project-links">
-                        <a href="https://condicionzero.netlify.app/" target="_blank" class="project-link">↗ Ver demo</a>
+                        <a href="https://condicionzero.netlify.app/" target="_blank" class="project-link"
+                            data-i18n="proj_ver_demo">↗ Ver demo</a>
                     </div>
                 </div>
             </div>
@@ -309,12 +313,12 @@
                         <span class="tag">Mockups</span>
                     </div>
                     <div class="project-title">Fundación Académica del Litoral</div>
-                    <p class="project-desc">Diseño gráfico e identidad visual para institución sin fines de lucro.
-                        Desarrollo de
-                        mockups y
-                        materiales visuales con Corel Draw para su plataforma web.</p>
+                    <p class="project-desc" data-i18n="desc_fundal">Diseño gráfico e identidad visual para institución
+                        sin fines de lucro. Desarrollo de mockups y materiales visuales con Corel Draw para su
+                        plataforma web.</p>
                     <div class="project-links">
-                        <a href="https://fundalsfe.netlify.app/" target="_blank" class="project-link">↗ Ver demo</a>
+                        <a href="https://fundalsfe.netlify.app/" target="_blank" class="project-link"
+                            data-i18n="proj_ver_demo">↗ Ver demo</a>
                     </div>
                 </div>
             </div>
@@ -330,15 +334,14 @@
                         <span class="tag teal">MongoDB</span>
                     </div>
                     <div class="project-title">ReserBar</div>
-                    <p class="project-desc">App de reservas para bares desarrollada en MERN Stack con autenticación por
-                        token.
-                        Proyecto grupal de aceleración con No Country. El servidor de producción fue dado de baja al
-                        finalizar el
-                        programa.</p>
+                    <p class="project-desc" data-i18n="desc_reserbar">App de reservas para bares desarrollada en MERN
+                        Stack con autenticación por token. Proyecto grupal de aceleración con No Country. El servidor de
+                        producción fue dado de baja al finalizar el programa.</p>
                     <div class="project-links">
-                        <a href="https://reserbar.netlify.app/" target="_blank" class="project-link">↗ Ver demo</a>
-                        <a href="https://github.com/LeandroGutierrezDev/ReserBar" target="_blank" class="project-link">⌥
-                            Repositorio</a>
+                        <a href="https://reserbar.netlify.app/" target="_blank" class="project-link"
+                            data-i18n="proj_ver_demo">↗ Ver demo</a>
+                        <a href="https://github.com/LeandroGutierrezDev/ReserBar" target="_blank" class="project-link"
+                            data-i18n="proj_repo">⌥ Repositorio</a>
                     </div>
                 </div>
             </div>
@@ -354,15 +357,14 @@
                         <span class="tag teal">REST API</span>
                     </div>
                     <div class="project-title">No Country Cinema</div>
-                    <p class="project-desc">Proyecto grupal de aceleración de seniority con No Country. Desarrollo del
-                        backend con
-                        Node.js, Express y endpoints RESTful. El servidor de producción fue dado de baja al finalizar el
-                        programa.
-                    </p>
+                    <p class="project-desc" data-i18n="desc_cinema">Proyecto grupal de aceleración de seniority con No
+                        Country. Desarrollo del backend con Node.js, Express y endpoints RESTful. El servidor de
+                        producción fue dado de baja al finalizar el programa.</p>
                     <div class="project-links">
-                        <a href="https://nccinema.netlify.app/" target="_blank" class="project-link">↗ Ver demo</a>
-                        <a href="https://github.com/LeandroGutierrezDev/NCinema" target="_blank" class="project-link">⌥
-                            Repositorio</a>
+                        <a href="https://nccinema.netlify.app/" target="_blank" class="project-link"
+                            data-i18n="proj_ver_demo">↗ Ver demo</a>
+                        <a href="https://github.com/LeandroGutierrezDev/NCinema" target="_blank" class="project-link"
+                            data-i18n="proj_repo">⌥ Repositorio</a>
                     </div>
                 </div>
             </div>
@@ -378,15 +380,14 @@
                         <span class="tag">CSS3</span>
                     </div>
                     <div class="project-title">Gestor de Turnos</div>
-                    <p class="project-desc">Administrador de pacientes para veterinaria desarrollado en React. Gestión
-                        de turnos
-                        con estado global, formularios controlados y persistencia de datos.</p>
+                    <p class="project-desc" data-i18n="desc_turnos">Administrador de pacientes para veterinaria
+                        desarrollado en React. Gestión de turnos con estado global, formularios controlados y
+                        persistencia de datos.</p>
                     <div class="project-links">
                         <a href="https://administrador-pacientes-veterinaria-lgdev.netlify.app/" target="_blank"
-                            class="project-link">↗ Ver demo</a>
+                            class="project-link" data-i18n="proj_ver_demo">↗ Ver demo</a>
                         <a href="https://github.com/LeandroGutierrezDev/gestor-turnos-vet" target="_blank"
-                            class="project-link">⌥
-                            Repositorio</a>
+                            class="project-link" data-i18n="proj_repo">⌥ Repositorio</a>
                     </div>
                 </div>
             </div>
@@ -402,15 +403,13 @@
                         <span class="tag">CSS3</span>
                     </div>
                     <div class="project-title">Control de Gastos</div>
-                    <p class="project-desc">App de control semanal de gastos construida en React. Visualización por
-                        categoría,
-                        seguimiento de presupuesto y gráficos de distribución.</p>
+                    <p class="project-desc" data-i18n="desc_gastos">App de control semanal de gastos construida en
+                        React. Visualización por categoría, seguimiento de presupuesto y gráficos de distribución.</p>
                     <div class="project-links">
-                        <a href="https://gastos-semanal-lgdev.netlify.app/" target="_blank" class="project-link">↗ Ver
-                            demo</a>
+                        <a href="https://gastos-semanal-lgdev.netlify.app/" target="_blank" class="project-link"
+                            data-i18n="proj_ver_demo">↗ Ver demo</a>
                         <a href="https://github.com/LeandroGutierrezDev/controlsemanal" target="_blank"
-                            class="project-link">⌥
-                            Repositorio</a>
+                            class="project-link" data-i18n="proj_repo">⌥ Repositorio</a>
                     </div>
                 </div>
             </div>
@@ -423,13 +422,13 @@
     <!-- CONTACT -->
     <section id="contact" style="max-width:100%; padding: 3rem 2rem;">
         <div class="inner">
-            <div class="section-label">04 — Contacto</div>
-            <h2 class="section-title">Hablemos</h2>
+            <div class="section-label" data-i18n="contact_label">04 — Contacto</div>
+            <h2 class="section-title" data-i18n="contact_title">Hablemos</h2>
             <div class="contact-grid">
                 <div>
-                    <p class="contact-copy">¿Tenés un proyecto en mente, o simplemente querés charlar sobre tecnología?
-                        Escribime,
-                        siempre estoy abierto a nuevas oportunidades y colaboraciones.</p>
+                    <p class="contact-copy" data-i18n="contact_copy">¿Tenés un proyecto en mente, o simplemente querés
+                        charlar sobre tecnología?
+                        Escribime, siempre estoy abierto a nuevas oportunidades y colaboraciones.</p>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/leandro-gutierrez-dev/" target="_blank"
                             class="social-link">
@@ -475,32 +474,34 @@
                     </div>
                 </div>
                 <div>
-                    <!-- <form id="contactForm"> -->
                     <form id="contactForm" data-netlify="true" name="contact" method="POST">
                         <input type="hidden" name="form-name" value="contact">
                         <div class="form-row">
                             <div class="field">
-                                <label for="name">Nombre</label>
-                                <input type="text" id="name" name="name" placeholder="Tu nombre" autocomplete="name"
-                                    required />
+                                <label for="name" data-i18n="form_name">Nombre</label>
+                                <input type="text" id="name" name="name" data-i18n-placeholder="form_name_placeholder"
+                                    placeholder="Tu nombre" autocomplete="name" required />
                             </div>
                             <div class="field">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="tu@email.com"
+                                <input type="email" id="email" name="email"
+                                    data-i18n-placeholder="form_email_placeholder" placeholder="tu@email.com"
                                     autocomplete="email" required />
                             </div>
                         </div>
                         <div class="field">
-                            <label for="subject">Asunto</label>
-                            <input type="text" id="subject" name="subject" placeholder="¿De qué se trata?"
+                            <label for="subject" data-i18n="form_subject">Asunto</label>
+                            <input type="text" id="subject" name="subject"
+                                data-i18n-placeholder="form_subject_placeholder" placeholder="¿De qué se trata?"
                                 autocomplete="off" />
                         </div>
                         <div class="field">
-                            <label for="msg">Mensaje</label>
-                            <textarea id="msg" name="message" placeholder="Contame tu idea..." autocomplete="off"
-                                required></textarea>
+                            <label for="msg" data-i18n="form_msg">Mensaje</label>
+                            <textarea id="msg" name="message" data-i18n-placeholder="form_msg_placeholder"
+                                placeholder="Contame tu idea..." autocomplete="off" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-full">Enviar mensaje →</button>
+                        <button type="submit" class="btn btn-primary btn-full" data-i18n="form_submit">Enviar mensaje
+                            →</button>
                     </form>
                 </div>
             </div>
@@ -510,8 +511,8 @@
     <!-- FOOTER -->
     <footer>
         <div class="footer-copy">
-            © 2026 <span>Leandro Gutierrez</span> — Hecho con <strong style="color:red;">♥</strong> desde Lanús, Buenos
-            Aires, Argentina
+            © 2026 <span>Leandro Gutierrez</span> — <span data-i18n="footer_copy">Hecho con</span> <strong
+                style="color:red;">♥</strong> <span data-i18n="footer_from">desde Lanús, Buenos Aires, Argentina</span>
         </div>
         <div class="footer-links">
             <a href="https://github.com/LeandroGutierrezDev" target="_blank">GitHub</a>
@@ -520,7 +521,7 @@
         </div>
     </footer>
 
-
+    <script src="./assets/js/i18n.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 
