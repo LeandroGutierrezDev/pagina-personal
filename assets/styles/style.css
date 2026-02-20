@@ -1281,3 +1281,20 @@
             word-break: break-word;
         }
     }
+
+    @media (max-width: 360px) {
+
+        .about-info {
+            margin: 1rem auto;
+        }
+
+        .info-value {
+            font-weight: 500;
+            color: var(--text);
+            font-size: 0.75rem;
+        }
+
+        .info-item {
+            width: 250px;
+        }
+    }
