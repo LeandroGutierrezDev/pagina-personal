@@ -33,7 +33,7 @@ const observer = new IntersectionObserver((entries) => {
             });
         }
     });
-}, { threshold: 0.4 });
+}, { threshold: 0, rootMargin: '0px 0px -50% 0px' });
 
 document.querySelectorAll('section[id]').forEach(sec => observer.observe(sec));
 
@@ -58,16 +58,6 @@ animItems.forEach(el => {
     animObserver.observe(el);
 });
 
-// Form handler
-// document.querySelector('#contactForm').addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     const name = document.getElementById('name').value;
-//     const email = document.getElementById('email').value;
-//     const subject = document.getElementById('subject').value || 'Contacto desde portfolio';
-//     const msg = document.getElementById('msg').value;
-//     const mailto = `mailto:leandrogutierrezdev@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\n${msg}`)}`;
-//     window.location.href = mailto;
-// });
 
 // Nav shadow on scroll
 window.addEventListener('scroll', () => {
